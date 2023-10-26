@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .navItems {
+          @apply p-5 text-black font-medium;
+        }
+        .buttons {
+          @apply text-white p-2 rounded-md m-2;
+        }
+        .footerItems {
+          @apply p-5 text-black font-medium;
+        }
+        .cards {
+          @apply m-2 bg-white p-6 w-96 border-gray-100 border-2 rounded-md;
+        }
+      }
+    </style>
+    <title>Layout 3</title>
+  </head>
+  <body>
+    <div class="mt-10 ml-20 mr-20 mb-10">
+      <div class="navBar bg-white m-1 rounded-md border-2 border-blue-50">
+        <ul class="flex">
+          <li class="navItems">Projects</li>
+          <li class="navItems">About</li>
+          <li class="navItems">Contact</li>
+        </ul>
+      </div>
+      <div>
+        <div class="mainContainer flex m-10 justify-between">
+          <div class="leftContent">
+            <div class="textContent">
+              <h1 class="text-xl font-bold">John Doe web developer</h1>
+              <br />
+              <p class="text-sm font-semibold">
+                I'm a web developer with more than 10 years of experience
+              </p>
+            </div>
+            <button
+              class="bg-violet-500 mt-10 m-2 rounded-xl p-1 pl-4 pr-4 text-white"
+            >
+              Hire me
+            </button>
+            <div class="buttonsContainer">
+              <button class="bg-pink-400 buttons">HTML</button>
+              <button class="bg-orange-400 buttons">CSS</button>
+              <button class="bg-violet-400 buttons">javascript</button>
+            </div>
+          </div>
+          <div class="rightContent">
+            <img src="/assets/image.png" width="400px" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="bottomComponents">
+        <div class="flex">
+          <h2 class="p-5 text-black font-medium">Latest Projects</h2>
+          <select name="select" id="">
+            <option value="All">All</option>
+          </select>
+        </div>
+        <div class="cardContainer flex max-[768px]:flex-col">
+          <div class="cards">
+            <h2 class="text-black font-medium">
+              Noteworthy technology acquisitions 2021
+            </h2>
+            <p class="text-black font-light">
+              Here are the biggest enterpise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+          </div>
+          <div class="cards">
+            <h2 class="text-black font-medium">
+              Noteworthy technology acquisitions 2021
+            </h2>
+            <p class="text-black font-light">
+              Here are the biggest enterpise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+          </div>
+          <div class="cards">
+            <h2 class="text-black font-medium">
+              Noteworthy technology acquisitions 2021
+            </h2>
+            <p class="text-black font-light">
+              Here are the biggest enterpise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondaryContent m-10 flex justify-between">
+        <div class="subInfo">
+          <h1 class="text-xl font-bold m-10">Subscribe to my newsletter</h1>
+          <p class="text-sm font-semibold">
+            I write bout web development, design, and other cool stuff.
+          </p>
+        </div>
+
+        <div class="subStuff mt-20">
+          <input
+            class="bg-white m-1 rounded-md border-2 border-blue-50 p-3"
+            placeholder="Your email"
+            type="text"
+          />
+          <button class="bg-violet-500 p-4 rounded-3xl pl-7 pr-7 text-white">
+            Subscribe
+          </button>
+        </div>
+      </div>
+      <div class="footer flex justify-between">
+        <ul class="flex">
+          <li class="footerItems">LinkedIn</li>
+          <li class="footerItems">Github</li>
+          <li class="footerItems">Twitter</li>
+          <li class="footerItems">Instagram</li>
+        </ul>
+        <p class="p-5 text-black font-medium">2023 John Doe</p>
+      </div>
+    </div>
+  </body>
+</html>
