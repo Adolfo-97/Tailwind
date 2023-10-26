@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .midOnes {
+          @apply m-2 p-8;
+        }
+        .bigOne {
+          @apply m-2 pt-8 pb-8 pl-8 pr-16;
+        }
+        .centerComponents {
+          @apply bg-white m-3 p-4;
+        }
+      }
+    </style>
+    <title>Layout 1</title>
+  </head>
+
+  <body>
+    <div class="flex justify-center">
+      <section class="bg-green-700 order-3 midOnes" id="green">
+        <p>GREEN</p>
+      </section>
+      <section class="bg-yellow-500 order-first midOnes" id="yellow ">
+        <p>YELLOW</p>
+        <ul class="justify-between">
+          <li class="centerComponents">1</li>
+          <li class="centerComponents">2</li>
+          <li class="centerComponents">3</li>
+          <li class="centerComponents">4</li>
+        </ul>
+      </section>
+      <section class="bg-orange-700 order-4 bigOne" id="orange">
+        <p>ORANGE</p>
+      </section>
+      <section class="bg-red-700 order-2 midOnes" id="red">
+        <p>RED</p>
+        <ul>
+          <li class="centerComponents">A</li>
+          <li class="centerComponents">B</li>
+          <li class="centerComponents">C</li>
+          <li class="centerComponents">D</li>
+        </ul>
+      </section>
+      <section class="bg-blue-700 order-5 midOnes" id="blue">
+        <p>BLUE</p>
+      </section>
+    </div>
+  </body>
+</html>
