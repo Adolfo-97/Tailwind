@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .centerComponents {
+          @apply bg-white p-8;
+        }
+      }
+    </style>
+    <title>Layout 2</title>
+  </head>
+
+  <body>
+    <div class="grid grid-cols-6 grid-rows-4 gap-4 min-h-screen">
+      <section class="bg-green-700 col-span-6 p-4" id="green">
+        <p>GREEN</p>
+      </section>
+      <section
+        class="bg-yellow-500 col-start-1 col-span-2 row-start-2 row-span-2 p-4"
+        id="yellow"
+      >
+        <p>YELLOW</p>
+        <ul class="mt-20 grid grid-rows-2 grid-cols-2 gap-6">
+          <li class="centerComponents">1</li>
+          <li class="centerComponents">2</li>
+          <li class="centerComponents">3</li>
+          <li class="centerComponents">4</li>
+        </ul>
+      </section>
+      <section
+        class="bg-orange-700 col-start-1 col-span-4 row-start-4 p-4"
+        id="orange"
+      >
+        <p>ORANGE</p>
+      </section>
+      <section
+        class="bg-red-500 col-start-3 col-span-2 row-start-2 row-span-2 p-4"
+        id="red"
+      >
+        <p>RED</p>
+        <ul class="mt-20 grid grid-rows-2 grid-cols-2 gap-6">
+          <li class="centerComponents">A</li>
+          <li class="centerComponents">B</li>
+          <li class="centerComponents">C</li>
+          <li class="centerComponents">D</li>
+        </ul>
+      </section>
+      <section
+        class="bg-blue-400 col-start-5 col-span-2 row-start-2 row-span-3 p-4"
+        id="blue"
+      >
+        <p>BLUE</p>
+      </section>
+    </div>
+  </body>
+</html>
